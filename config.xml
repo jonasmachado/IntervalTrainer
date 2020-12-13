@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/IntervalTraining" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="LhoCX9CmVp.IntervalTraining" package="LhoCX9CmVp" required_version="5.5"/>
+    <author email="jonasm.1511@gmail.com">Jonas Machado</author>
+    <tizen:background-category value="media"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon2.jpg"/>
+    <name>IntervalTraining</name>
+    <tizen:privilege name="http://tizen.org/privilege/mediacapture"/>
+    <tizen:privilege name="http://tizen.org/privilege/mediacontroller.client"/>
+    <tizen:privilege name="http://tizen.org/privilege/mediacontroller.server"/>
+    <tizen:privilege name="http://tizen.org/privilege/system"/>
+    <tizen:privilege name="http://tizen.org/privilege/volume.set"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="enable" encryption="disable" hwkey-event="enable"/>
+</widget>

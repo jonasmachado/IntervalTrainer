@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Basic</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/atividade.js"></script>
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="atividade-page" style="background-color: black; color: white !important">
+		<header class="ui-header">
+			<h2 class="ui-title" id="titulo">Interval Training</h2>
+		</header>
+		<div class="ui-content content-padding" style="background-color: black">
+     		<audio id='audio'>
+			  <source id="a-walk" src="audios/1min-walk.mp4"></source>
+			  <source id="a-run-1" class='active' src="audios/1min-run-1.mp4"></source>
+			  <source id="a-54321" src="audios/54321.mp4"></source>
+			  <source id="a-complete" src="audios/complete.mp4"></source>
+			  <source id="a-run-2" src="audios/2min-run.mp4"></source>
+			  <source id="a-walk-2" src="audios/2min-walk.mp4"></source>
+			</audio>
+		  	<div style='margin:auto;'>
+		  		<div id="painel" style="display: unset">
+		  			<h1 style="position: relative; justify-content: center; display: flex" id="iniciar" onclick="startarContagemRegressiva()">Start</h1>
+		  			<div id="cronometro" style="display: none">
+			  			<h1 style="position: relative; justify-content: center; display: flex" id="demo">00:00</h1>
+			  			<h4 id="ciclo"></h4>
+			  			<a style="display: none" onclick="removerIntervalos()" id="voltar" href="index.html">Back</a>
+		  			</div>
+		  			<div id="regressiva" style="display:none">
+		  				<h1 style="position: relative; justify-content: center; display: flex" id="contador"></h1>	
+		  			</div>
+		  		</div>
+		  	</div>
+	
+      </div>
+	</div>
+	<script src="lib/tau/wearable/js/tau.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/lowBatteryCheck.js"></script>
+	<script src="js/circle-helper.js"></script>
+</body>
+</html>
